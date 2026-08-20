@@ -7,12 +7,15 @@
 </head>
 <body>
     <input type="text" id="input1">
-    <button onclick="printvalue()">submit</button>
+    <button id="bid">submit</button>
+    <p id="pid"></p>
     <script>
-        function printvalue(){
-        let screen1=document.getElementById("input1").value
-        console.log(screen1)
-        }
+        let button = document.getElementById('bid')
+        let paragraph = document.getElementById('pid')
+        let show = document.getElementById('input1')
+        button.addEventListener('click',function() {
+            document.getElementById('pid').innerHTML= show.value;
+        });
     </script>
 </body>
 </html>
