@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="enter text"> <br> <br>
+    <input type="no" id="input2" placeholder="enter starting index"> <br> <br>
+    <input type="no" id="input3" placeholder="enter last index "> <br> <br>
+    <input type="no" id="input4" placeholder="a word to find its index"> <br> <br>
+    <button onclick="slicevalue()">submit</button>
+    <p id="para"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <script>
+        function slicevalue(){
+       
+            
+        let screen1=document.getElementById("input1").value
+        let index1=document.getElementById("input2").value
+        let index2=document.getElementById("input3").value
+        let index3=
+        
+        document.getElementById("para").innerHTML = screen1
+        input1.value = "";
+        input2.value = "";
+        input3.value = "";
+        var final = screen1.slice(index1,index2);
+        document.getElementById("para2").innerHTML = final
+        
+
+
+
+        
+ 
+
+        }
+    </script>
+</body>
+</html>
