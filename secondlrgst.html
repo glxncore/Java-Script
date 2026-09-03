@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr=[10,3,33,54,13,26,19,24,32];
+    let largest=arr[0];
+    let secondlargest=arr[0];
+
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]>largest){
+            secondlargest=largest;
+            largest=arr[i];
+
+
+        }
+        else if( arr[i]>secondlargest && arr[i]!=largest){
+            secondlargest=arr[i];
+
+        }
+    }
+
+console.log(secondlargest)
+
+    </script>
+</body>
+</html>
