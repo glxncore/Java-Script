@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <input type="number" placeholder="Enter first number" id="num1" />
+    <input type="number" placeholder="Enter second number" id="num2" />
+    <select name="operations" id="opid">
+      <option value="add">addition</option>
+      <option value="sub">substraction</option>
+      <option value="mul">multiplication</option>
+      <option value="div">division</option>
+    </select>
+    <button id="equalid">=</button>
+    <p id="result"></p>
+    </div>
+  </body>
+  <script>
+    function add(a, b) {
+      let result = a + b;
+      return result;
+    }
+    function substract(a, b) {
+      let result = a - b;
+      return result;
+    }
+    function multiply(a, b) {
+      let result = a * b;
+      return result;
+    }
+    function division(a, b) {
+      let result = a / b;
+      return result;
+    }
+    let button = document.getElementById("equalid");
+    button.addEventListener("click", function () {
+      let a = parseInt(document.getElementById("num1").value);
+      let b = parseInt(document.getElementById("num2").value);
+      let c = document.getElementById("opid").value;
+      if (c == "add") {
+        let result = add(a, b);
+        let output = document.getElementById("result");
+        output.innerHTML = result;
+      } else if (c == "sub") {
+        let result = substract(a, b);
+        let output = document.getElementById("result");
+        output.innerHTML = result;
+      } else if (c == "mul") {
+        let result = multiply(a, b);
+        let output = document.getElementById("result");
+        output.innerHTML = result;
+      } else {
+        let result = division(a, b);
+        let output = document.getElementById("result");
+        output.innerHTML = result;
+      }
+    });
+  </script>
+</html>
