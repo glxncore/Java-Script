@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        />
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container">
-    <input type="number" placeholder="Enter first number" id="num1" />
-    <input type="number" placeholder="Enter second number" id="num2" />
-    <select name="operations" id="opid">
-      <option value="add">addition</option>
-      <option value="sub">substraction</option>
-      <option value="mul">multiplication</option>
-      <option value="div">division</option>
-    </select>
-    <button id="equalid">=</button>
-    <p id="result"></p>
+    <div  >
+      <h2 class="text-center" >CALCULATOR</h2>
+    </div>
+    <div class="container mt-5 " >
+      <div class="form-group">
+        <input
+          type="number"
+          placeholder="Enter first number"
+          id="num1"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          placeholder="Enter second number"
+          id="num2"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+      <select name="operations" id="opid" class="form-control">
+        <option value="add">addition</option>
+        <option value="sub">substraction</option>
+        <option value="mul">multiplication</option>
+        <option value="div">division</option>
+      </select>
+      </div>
+      <button id="equalid">=</button>
+      <p id="result"></p>
     </div>
   </body>
   <script>
